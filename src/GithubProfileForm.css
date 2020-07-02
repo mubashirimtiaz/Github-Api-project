@@ -1,0 +1,39 @@
+.GithubProfileForm form {
+  padding: 5px;
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+}
+.GithubProfileForm label {
+  display: block;
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #757575;
+}
+.GithubProfileForm input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1.1em;
+  box-shadow: 1px 1px 5px #aaaaaa;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.GithubProfileForm input:focus {
+  box-shadow: inset 1px 1px 5px #aaaaaa;
+}
+.GithubProfileForm button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 1.1em;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  border-radius: 3px;
+  color: #ffffff;
+}
