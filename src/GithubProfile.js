@@ -15,11 +15,27 @@ export default class GithubProfile extends Component {
     };
     console.log("Inside Constructor");
   }
-  componentDidUpdate;
 
   async componentDidUpdate() {
     console.log("Inside componentDidMount");
     const url = `https://api.github.com/users/${this.props.username}`;
+    // const response = await fetch(url);
+    // const data = response
+    //   .json()
+    //   .then((data) => {
+    //     setTimeout(() => {
+    //       this.setState({
+    //         name: data.name,
+    //         imgUrl: data.avatar_url,
+    //         followers: data.followers,
+    //         following: data.following,
+    //         isLoaded: true,
+    //       });
+    //     }, 3000);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err.messageText);
+    //   });
     const response = await axios.get(url);
     const data = response.data;
     console.log(data);
